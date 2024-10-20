@@ -48,8 +48,7 @@ main {
     margin-bottom: 15px;
 }
 
-.formulario input:nth-child(4) {
-    /* height: 100px; */
+.formulario #mensagem {
     padding-top: 15px;
     padding-bottom: 85px;
     margin-bottom: 7px;
@@ -64,10 +63,10 @@ main {
     border-radius: 5px;
 }
 
-.formulario p {
+.formulario .legenda {
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .formulario .btn-enviar {
@@ -78,4 +77,42 @@ main {
     height: 41px;
     background-color: #3CCC87;
     color: #ffffff;
+    margin: 0;
+}
+
+.formulario .aviso {
+    display: none;
+    color: #f52e2e;
+    font-size: 8px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.formulario form .validacao-negada {
+    border: 1px solid #f52e2e;
+    margin-bottom: 0;
+}
+
+.formulario form .validacao-negada:nth-child(7) {
+    padding-top: 15px;
+    padding-bottom: 85px;
+    margin-bottom: 0;
+}
+
+.formulario .mostrar.aviso {
+    display: block;
+}
+
+.formulario .legenda.vldc-negada {
+    margin-bottom: 5px;
+}
+
+.formulario form .aceito {
+    border: 1px solid #00C22B;
+}
+
+.formulario form .aceito:nth-child(7) {
+    padding-top: 15px;
+    padding-bottom: 85px;
+    margin-bottom: 7px;
 }
