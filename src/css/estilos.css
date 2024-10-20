@@ -78,6 +78,10 @@ main {
     background-color: #3CCC87;
     color: #ffffff;
     margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario .aviso {

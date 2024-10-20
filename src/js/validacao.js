@@ -1,14 +1,23 @@
-const inputs = document.querySelectorAll(".validacao")
+const btnEnviar = document.querySelector(".btn-enviar")
 
-console.log(inputs)
+btnEnviar.addEventListener("click", validarFormulario)
 
-inputs.forEach(function (input) {
-    input.addEventListener("change", mostrarAviso);
-    function mostrarAviso() {
+function validarFormulario() {
+    
+    const inputs = document.querySelectorAll(".validacao")
+    const avisos = document.querySelectorAll(".aviso")
+    const legenda = document.querySelector(".legenda")
+
+    inputs.forEach(function (input, index) {
         if (input.value !== "") {
-            input.classList.add("aceito");
+            input.classList.add("aceito")
+            input.classList.remove("validacao-negada")
+            avisos[index].classList.remove("mostrar")
         } else {
-            input.classList.remove("aceito");
+            input.classList.remove("aceito")
+            input.classList.add("validacao-negada")
+            avisos[index].classList.add("mostrar")
+            legenda.classList.add("vldc-negada")
         }
-    }
-})
+    })
+}
