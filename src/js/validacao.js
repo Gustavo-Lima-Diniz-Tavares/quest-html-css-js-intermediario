@@ -17,7 +17,6 @@ function validarFormulario() {
             input.classList.remove("aceito")
             input.classList.add("validacao-negada")
             avisos[index].classList.add("mostrar")
-            legenda.classList.add("vldc-negada")
         }
     })
 }
