@@ -4,9 +4,9 @@ btnEnviar.addEventListener("click", validarFormulario)
 
 function validarFormulario() {
     
+    event.preventDefault()
     const inputs = document.querySelectorAll(".validacao")
     const avisos = document.querySelectorAll(".aviso")
-    const legenda = document.querySelector(".legenda")
 
     inputs.forEach(function (input, index) {
         if (input.value !== "") {

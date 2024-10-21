@@ -71,7 +71,6 @@ main {
 }
 
 .formulario .btn-enviar {
-    width: 298px;
     border: none;
     border-radius: 5px;
     font-size: 15px;
@@ -83,9 +82,6 @@ main {
     cursor: pointer;
     position: absolute;
     top: 315px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .formulario .aviso {
