@@ -43,19 +43,21 @@ main {
     position: relative;
 }
 
-.formulario input {
+.formulario .campo {
     height: 35px;
     width: 298px;
     margin-bottom: 15px;
 }
 
 .formulario #mensagem {
-    padding-top: 15px;
-    padding-bottom: 85px;
+    height: 100px;
+    width: 298px;
     margin-bottom: 7px;
+    resize: none;
+    padding: 8px 5px 0 10px;
 }
 
-.formulario input[placeholder] {
+.formulario .campo[placeholder] {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -76,6 +78,7 @@ main {
     font-size: 15px;
     font-weight: 700;
     height: 41px;
+    width: 298px;
     background-color: #3CCC87;
     color: #ffffff;
     margin: 0;
@@ -96,14 +99,8 @@ main {
     margin-bottom: 4px;
 }
 
-.formulario form .validacao-negada {
+.formulario form .campo.erro, .formulario form #mensagem.erro:nth-child(7){
     border: 1px solid #f52e2e;
-    margin-bottom: 0;
-}
-
-.formulario form #mensagem.validacao-negada:nth-child(7) {
-    padding-top: 15px;
-    padding-bottom: 85px;
     margin-bottom: 0;
 }
 
@@ -111,12 +108,11 @@ main {
     display: block;
 }
 
-.formulario form .aceito {
+.formulario form .campo.valido {
     border: 1px solid #00C22B;
 }
 
-.formulario form .aceito:nth-child(7) {
-    padding-top: 15px;
-    padding-bottom: 85px;
+.formulario form #mensagem.valido:nth-child(7) {
     margin-bottom: 7px;
+    border: 1px solid #00C22B;
 }
