@@ -21,7 +21,7 @@ Tabela de conteúdos
 
 ## Sobre o Projeto
 
-<p>Projeto de construção de um ormulário, onde caso os campos não sejam preenchidos o envio do formulário é negado e aparecem avisos de quais campos são necessários para o envio do mesmo.</p>
+<p>Projeto de construção de um formulário, onde caso os campos não sejam preenchidos o envio do formulário é negado e aparecem avisos de quais campos são necessários para o envio do mesmo.</p>
 
 ---
 
