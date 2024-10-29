@@ -43,6 +43,6 @@ Tabela de conteúdos
 
 <img src="./src/imagens/Seção formulário negado.png">
 
-### Formulário não válido:
+### Formulário válido:
 
 <img src="./src/imagens/Seção formulário aceito.png">
